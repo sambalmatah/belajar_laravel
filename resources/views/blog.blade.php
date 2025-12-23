@@ -1,5 +1,5 @@
 <x-layout :title="$title">
   
-  <p>This is Contact page.</p>
+  <p>Welcome to my Blog.</p>
   
 </x-layout>

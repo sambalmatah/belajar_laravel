@@ -1,7 +1,5 @@
-@extends('layouts.app')
-
-@section('title', $title)
-
-@section('content')
+<x-layout :title="$title">
+  
   <p>This is About page.</p>
-@endsection
+  
+</x-layout>
