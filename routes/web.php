@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Arr;
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
+
 
 Route::get('/', function () {
     return view('home', ['title' => 'Home Page']);
@@ -9,48 +10,14 @@ Route::get('/', function () {
 
 // membuat route baru ke view home
 Route::get('/posts', function () {
-    $posts = [
-        [
-            'id' => 1,
-            'slug' => 'judul-artikel-1',
-            'title' => 'Judul Artikel 1',
-            'author' => 'Yudi Ari Nugroho',
-            'post' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non aliquam delectus distinctio commodi eos dolores omnis ab asperiores rem iste, beatae alias quae in consectetur, praesentium deleniti repellendus saepe dolorum.'
-        ],
-        [
-            'id' => 2,
-            'slug' => 'judul-artikel-2',
-            'title' => 'Judul Artikel 1',
-            'author' => 'Yudi Ari Nugroho',
-            'post' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam in perspiciatis veniam eos nobis provident facere repellendus incidunt, praesentium ipsum nulla ipsa repellat, quae saepe dolore temporibus nemo, commodi voluptate?'
-        ]
-    ];
+    $posts = Post::all();
+
     return view('posts', ['title' => 'Blog', 'posts' => $posts]);
 });
 
 Route::get('/posts/{id}', function ($slug) {
-   $posts = [
-        [
-            'id' => 1,
-            'slug' => 'judul-artikel-1',
-            'title' => 'Judul Artikel 1',
-            'author' => 'Yudi Ari Nugroho',
-            'post' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non aliquam delectus distinctio commodi eos dolores omnis ab asperiores rem iste, beatae alias quae in consectetur, praesentium deleniti repellendus saepe dolorum.'
-        ],
-        [
-            'id' => 2,
-            'slug' => 'judul-artikel-2',
-            'title' => 'Judul Artikel 1',
-            'author' => 'Yudi Ari Nugroho',
-            'post' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam in perspiciatis veniam eos nobis provident facere repellendus incidunt, praesentium ipsum nulla ipsa repellat, quae saepe dolore temporibus nemo, commodi voluptate?'
-        ]
-    ];
 
-    $post = Arr::first($posts, function($post) use ($slug) {
-        return $post['slug'] == $slug;
-    });
-
-    if (!$post) abort(404);
+    $post = Post::find($slug);
 
     return view('post', ['title' => 'Single post', 'post' => $post]);
 
