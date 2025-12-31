@@ -67,3 +67,7 @@ setelah melakukan semua pembelajaran, saya menyadari sebaiknya menuliskan readme
 saya menyelesaikan bagian untuk Models\Post. dimana class Post ini extends Models dan memiliki variable fillable pada kolom title, slug, author dan body.
 fillable digunakan untuk mengisi data baris database yang sebelumnya dijaga oleh laravel agar aplikasi aman dari serangan hacker.
 penambahan data baris database menggunakan php artisan tinker.
+
+saat ini baru saja menyelesaikan penggunaan faker pada tinker untuk generate data yang dibentuk melalui Post:factory (Defining Modell Factories).
+kelebihan dari faker adalah kita dapat melakukan generate berbagai kebutuhan data dan sekaligus juga fleksibel.
+sebagai contoh, laravel telah membuatkan satu contoh factory yaitu UserFactory.
