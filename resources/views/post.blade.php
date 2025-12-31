@@ -5,7 +5,7 @@
     <div class="font-extralight text-gray-800">
       <p><a href="#">{{ $post['author'] }}</a> | 1 Jan 2025</p>
     </div>
-    <p class="my-4 font-light">{{ $post['post'] }}</p>
+    <p class="my-4 font-light">{{ $post['body'] }}</p>
     <a href="/posts/" class="font-medium text-blue-600 hover:underline"> &laquo; Back to All Blog</a>
   </article>
   
