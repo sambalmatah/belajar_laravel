@@ -7,7 +7,7 @@
       <h2 class="mb-1 text-3xl font-bold tracking-tight text-gray-900">{{ $post['title'] }}</h2>
     </a>
     <div class="font-extralight text-gray-800">
-      <p><a href="#">{{ $post['author'] }}</a> | 1 Jan 2025</p>
+      <p><a href="/authors/{{ $post->author->id }}" class="hover:underline">{{ $post->author->name }}</a> | 1 Jan 2025</p>
     </div>
     <p class="my-4 font-light">{{ Str::limit($post['body'] ?? '', 100) }}</p>
     <a href="/posts/{{ $post['slug'] }}" class="font-medium text-blue-600 hover:underline">Read more &raquo;</a>
