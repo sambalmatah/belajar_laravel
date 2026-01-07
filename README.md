@@ -74,3 +74,5 @@ sebagai contoh, laravel telah membuatkan satu contoh factory yaitu UserFactory.
 
 saat ini saya baru saja mempelajari bagaimana cara laravel dapat dihubungkan dengan menggunakan reference serta dapat membuat generate data yang dibentuk sekaligus.
 sehingga antara table user dan table posts memiliki nilai yang sama atau saling berhubungan. kemudian saya belajar bagaimana cara untuk menampilkan pengelompokan penulis dan menampilkan artikel yang ditulis berdasarkan nama penulis.
+
+pada pembelajaran kali ini saya belajar membuat sebuah tabel database baru dengan nama Category. Pelajaran ini membahas bagaimana artisan dapat membuat 3 file yaitu model, migration dan factory dengan satu command. Di situ saya harus membuat structure database menggunakan file migrations, kemudian membuat foreign key dengan tabel Post. Setelah jadi, saya perlu migrate:fresh dan generate ulang menngunakan factory dan recycle. Kemudian yang terakhir saya menambahkan tampilan untuk letak Category selanjutnya mengatur route web.php supaya view by Category dapat tampil
