@@ -92,3 +92,6 @@ dalam pembelajaran kali ini saya memahami bagaimana caranya mengganti UI library
 
 UPDATE UI HALAMAN SINGGLE POST
 dalam pembelajaran kali ini saya memahami bagaimana caranya mengganti tampilan UI untuk satu buah halaman dengan menggunakan library Flowbite. ini juga memerlukan beberapa konfigurasi awal yang namun lebih sedikit atau lebih simple dari pada update UI Flowbite pada pembelajaran sebelumnya. saya hanya perlu menginstall npm i -D flowbite-typography yang membutuhkan akses kepada CurrentUser pada terminal PowerShell. lalu menambahkan @plugin pada app.css setelah itu hanya menerapkan tampilan sesuai yang diinginkan (secara sederhana).
+
+SIMPLE POST SEARCHING
+dalam pembelajaran ini saya memahami cara pencarian bekerja di laravel yang menggunakan Post::get(). saat input search tidak memiliki kalimat pencarian maka akan ditampilkan seluruh blog yang tersimpan pada database, jika input search diisi maka akan menampilkan data yang mirip dengan isian input search. disini saya mengubah beberapa tampilan agar terlihat sesuai dan menambahkan beberapa atribut agar sesuai dengan web.php yang menjadi kunci sebagai pemanggil data. setelah ini akan belajar bagaimana data akan dicari juga saat masuk ke halaman category dan penulis.

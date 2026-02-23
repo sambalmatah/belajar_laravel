@@ -12,9 +12,13 @@ Route::get('/', function () {
 
 // membuat route baru ke view home
 Route::get('/posts', function () {
-    $posts = Post::with(['author', 'category'])->latest()->get();
+    $posts = Post::with(['author', 'category'])->latest();
 
-    return view('posts', ['title' => 'Blog', 'posts' => $posts]);
+    if (request('search')) {
+        $posts->where('title', 'like', '%' . request('search') . '%');
+    }
+
+    return view('posts', ['title' => 'Blog', 'posts' => $posts->get()]);
 });
 
 Route::get('/posts/{post:slug}', function (Post $post) {
