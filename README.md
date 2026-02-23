@@ -86,3 +86,6 @@ dalam pembelajaran ini selain membuat data random, kita dapat membuat juga data 
 
 N+1 Problem
 dalam pembelajaran kali ini saya memahami bagaimana permasalahan N+1 problem membebani load halaman web. N+1 problem adalah terlalu banyak melakukan query karena terlalu banyak looping untuk menampilkan data yang di dalamnya memiliki relasi. untuk melihat bagaimana query bekerja di laravel, bisa menggunakan laravel debugbar. disini kita perlu mengubah yang tadinya menggunakan lazy loading menjadi eager loading serta menggunakan lazy eager loading. catatan tambahan untuk membuat semua halaman tidak menggunakan lazy loading bisa menggunakan Model::preventLazyLoading()
+
+UPDATE UI MENGGUNAKAN FLOWBITE
+dalam pembelajaran kali ini saya memahami bagaimana caranya mengganti UI library dengan menggunakan Flowbite yang masih merupakan jenis UI yang menerapkan tailwind. Ini dilakukan supaya kita tetap dapat menggunakan UI fleksible namun tetap gratis. pertama perlu melakukan konfigurasi awal yaitu install flowbite, menambahkan script, tema dan beberapa syntax khusus agar Flowbite dapat tampil dengan normal. penggunaannya mudah hanya perlu konfigurasi awal saja agar tampilannya tidak rusak.
