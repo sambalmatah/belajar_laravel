@@ -89,3 +89,6 @@ dalam pembelajaran kali ini saya memahami bagaimana permasalahan N+1 problem mem
 
 UPDATE UI MENGGUNAKAN FLOWBITE
 dalam pembelajaran kali ini saya memahami bagaimana caranya mengganti UI library dengan menggunakan Flowbite yang masih merupakan jenis UI yang menerapkan tailwind. Ini dilakukan supaya kita tetap dapat menggunakan UI fleksible namun tetap gratis. pertama perlu melakukan konfigurasi awal yaitu install flowbite, menambahkan script, tema dan beberapa syntax khusus agar Flowbite dapat tampil dengan normal. penggunaannya mudah hanya perlu konfigurasi awal saja agar tampilannya tidak rusak.
+
+UPDATE UI HALAMAN SINGGLE POST
+dalam pembelajaran kali ini saya memahami bagaimana caranya mengganti tampilan UI untuk satu buah halaman dengan menggunakan library Flowbite. ini juga memerlukan beberapa konfigurasi awal yang namun lebih sedikit atau lebih simple dari pada update UI Flowbite pada pembelajaran sebelumnya. saya hanya perlu menginstall npm i -D flowbite-typography yang membutuhkan akses kepada CurrentUser pada terminal PowerShell. lalu menambahkan @plugin pada app.css setelah itu hanya menerapkan tampilan sesuai yang diinginkan (secara sederhana).
